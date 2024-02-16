@@ -1,12 +1,13 @@
 {
-  "name": "430-api",
+  "name": "430-api-2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/server.js",
   "scripts": {
     "pre-test": "eslint ./src --fix",
     "test": "echo \"Tests Complete\"",
-    "start": "node ./src/server.js"
+    "start": "node ./src/server.js",
+    "nodemon": "nodemon --watch ./src"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "devDependencies": {
     "eslint": "^8.56.0",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.29.1"
+    "eslint-plugin-import": "^2.29.1",
+    "nodemon": "^3.0.3"
   }
 }
