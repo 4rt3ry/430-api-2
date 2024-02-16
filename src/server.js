@@ -15,7 +15,7 @@ const port = process.env.PORT || process.env.NODE_PORT || 3000;
 // all entries must return a function (request, response, params)
 const requestHandler = {
     '/': loadPage,
-    '/client': loadPage,
+    '/hosted': loadPage,
     '/style.css': loadStyle,
     '/success': getSuccess,
     '/badRequest': getBadRequest,

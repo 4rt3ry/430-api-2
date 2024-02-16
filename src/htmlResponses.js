@@ -3,18 +3,18 @@ const fs = require('fs');
 const readFile = (filepath) => fs.readFileSync(`${__dirname}/${filepath}`);
 
 const content = {
-    '/client.html': readFile('../client/client.html'),
-    default: readFile('../client/client.html'),
+    '/hosted.html': readFile('../hosted/hosted.html'),
+    default: readFile('../hosted/hosted.html'),
 };
 
 const styles = {
-    '/style.css': readFile('../client/style.css'),
+    '/style.css': readFile('../hosted/style.css'),
     default: '',
 };
 
 /**
  * Retrieve an HTML page
- * @param {*} params { pathName: '/client.html' }
+ * @param {*} params { pathName: '/hosted.html' }
  */
 const loadPage = (request, response, params) => {
     const page = content[params.pathName] || content.default;
