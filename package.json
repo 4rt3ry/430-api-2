@@ -7,8 +7,9 @@
     "pre-test": "eslint ./src --fix",
     "test": "echo \"Tests Complete\"",
     "start": "node ./src/server.js",
-    "nodemon": "nodemon --watch ./src",
-    "bundle": "webpack"
+    "nodemon": "nodemon -e js,css,html --watch ./src",
+    "webpack": "webpack watch",
+    "heroku-postbuild": "webpack --mode production"
   },
   "repository": {
     "type": "git",
