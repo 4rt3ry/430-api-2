@@ -7,7 +7,7 @@
     "pre-test": "eslint ./src --fix",
     "test": "echo \"Tests Complete\"",
     "start": "node ./src/server.js",
-    "nodemon": "nodemon -e js,css,html --watch ./src",
+    "nodemon": "nodemon -e js,css,html --watch ./src --watch ./hosted --watch ./client",
     "webpack": "webpack watch",
     "heroku-postbuild": "webpack --mode production"
   },
